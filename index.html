@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff9ee">
+  <meta name="description" content="Explore projects by Romael Raina: web applications, digital design, publishing, and independent creative work.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Romael Raina | Projects & Portfolio">
+  <meta property="og:description" content="Turning Ideas Into Something Real. Explore projects across software, design and publishing.">
+  <title>Romael Raina | Projects & Portfolio</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="paper-grain" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Romael Raina, back to top"><span>Romael Raina</span><span class="brand-spark" aria-hidden="true">✳</span></a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="nav-links">
+        <a class="nav-link active" href="#top">Home</a>
+        <a class="nav-link" href="#work">Projects</a>
+        <a class="nav-link" href="#journey">Journey</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <button class="nav-mobile-resume" type="button" data-resume>Resume <span>(being updated)</span></button>
+      </div>
+      <button class="btn btn-small btn-yellow nav-resume" type="button" data-resume>
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 3h8l4 4v14H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm8 0v5h5M9 13h6m-6 4h6"/></svg>
+        Resume
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow hero-kicker"><span class="small-dot"></span> ENGINEERING GRADUATE · INDEPENDENT CREATOR</p>
+        <h1 id="hero-title">Turning <span class="scribble">Ideas</span> <br>Into <span class="marker">Something</span> <br>Real<span class="hero-period">.</span></h1>
+        <p class="hero-description">I explore web development, design and digital products—and enjoy turning interesting ideas into practical things people can use.</p>
+        <div class="hero-actions">
+          <a class="btn btn-yellow" href="#work">Explore My Projects <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-outline" href="#about">A Little About Me <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-note"><span class="mini-star" aria-hidden="true">✦</span> Curious by nature. Always learning.</div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-blob"></div>
+        <img class="hero-image" src="assets/hero-desk.webp" width="872" height="382" alt="" fetchpriority="high">
+        <span class="spark spark-a">✧</span><span class="spark spark-b">✳</span>
+      </div>
+      <svg class="doodle-cloud hero-cloud" viewBox="0 0 94 55" aria-hidden="true"><path d="M20 42C5 43 4 24 20 22c-1-11 11-18 20-12 6-13 24-10 29 5 16-1 24 19 11 27H20Z"/></svg>
+    </section>
+
+    <section class="work-section section container" id="work" aria-labelledby="work-title">
+      <div class="section-heading">
+        <div class="section-heading-title"><span class="heading-star" aria-hidden="true">✦</span><div><p class="eyebrow">THINGS I'VE MADE</p><h2 id="work-title">Featured Projects<span class="heading-dot">.</span></h2></div></div>
+        <p class="section-intro">A little bit of code, a little bit of creativity, and plenty of learning along the way.</p>
+      </div>
+      <div class="filter-row" role="group" aria-label="Filter projects">
+        <button class="filter-chip is-active" type="button" data-filter="all" aria-pressed="true">All projects <span>04</span></button>
+        <button class="filter-chip" type="button" data-filter="web" aria-pressed="false">Web &amp; tech</button>
+        <button class="filter-chip" type="button" data-filter="creative" aria-pressed="false">Creative work</button>
+      </div>
+      <div class="project-grid">
+        <article class="project-card color-blue" data-category="web" data-project-card="filesprout">
+          <button type="button" class="project-image-button" data-project="filesprout" aria-label="Learn more about FileSprout"><div class="project-image-wrap"><img src="assets/filesprout-card-actual.webp" alt="Screenshot of the FileSprout homepage showing its PDF tools and private file selection area" loading="lazy"><span class="project-image-star">✿</span></div></button>
+          <div class="project-body"><div class="project-title-row"><h3>FileSprout</h3><a class="icon-link" href="https://www.filesprout.net" target="_blank" rel="noopener noreferrer" aria-label="Visit FileSprout (opens in new tab)">↗</a></div><p>A free online PDF editor and document tools website.</p><div class="tags"><span>Web App</span><span>PDF Tools</span><span>Independent Project</span></div><button class="project-more" data-project="filesprout" type="button">Project details <span aria-hidden="true">→</span></button></div>
+        </article>
+        <article class="project-card color-lilac" data-category="web" data-project-card="editor">
+          <button type="button" class="project-image-button" data-project="editor" aria-label="Learn more about web video editor"><div class="project-image-wrap"><img src="assets/aurora-card.webp" alt="Aurora UI design concept showing a dark video editor with turquoise and violet controls" loading="lazy"><span class="ribbon">In Development</span></div></button>
+          <div class="project-body"><div class="project-title-row"><h3>Web Video Editor</h3><span class="mini-status">Ongoing</span></div><p>An evolving browser-based editor; Aurora is the proposed visual direction.</p><div class="tags"><span>UI Concept</span><span>Video Editing</span><span>In Progress</span></div><button class="project-more" data-project="editor" type="button">Project details <span aria-hidden="true">→</span></button></div>
+        </article>
+        <article class="project-card color-peach" data-category="creative" data-project-card="mochi">
+          <button type="button" class="project-image-button" data-project="mochi" aria-label="Learn more about Mochi and Friends"><div class="project-image-wrap"><img src="assets/mochi-card-actual.webp" alt="Original front cover of Mochi & Friends: A Cozy School Day by Lea Moore" loading="lazy"><span class="project-image-heart" aria-hidden="true">♡</span></div></button>
+          <div class="project-body"><div class="project-title-row"><h3>Mochi &amp; Friends</h3><a class="icon-link" href="https://www.amazon.com/dp/B0HNDNXHN5" target="_blank" rel="noopener noreferrer" aria-label="View Mochi and Friends on Amazon (opens in new tab)">↗</a></div><p>A published children's coloring book under the pen name Lea Moore.</p><div class="tags"><span>Publishing</span><span>Illustration</span><span>Creative Work</span></div><button class="project-more" data-project="mochi" type="button">Project details <span aria-hidden="true">→</span></button></div>
+        </article>
+        <article class="project-card color-rose" data-category="creative" data-project-card="serenity">
+          <button type="button" class="project-image-button" data-project="serenity" aria-label="Learn more about SerenityPrints"><div class="project-image-wrap"><img src="assets/serenity-card-actual.webp" alt="Collage of the SerenityPrints public storefront banner and three merchandise designs" loading="lazy"><span class="project-image-star rose-star" aria-hidden="true">✿</span></div></button>
+          <div class="project-body"><div class="project-title-row"><h3>SerenityPrints</h3><a class="icon-link" href="https://www.zazzle.com/store/serenityprints" target="_blank" rel="noopener noreferrer" aria-label="Visit SerenityPrints (opens in new tab)">↗</a></div><p>A print-on-demand store featuring original digital merchandise designs.</p><div class="tags"><span>Design</span><span>E-commerce</span><span>Merchandise</span></div><button class="project-more" data-project="serenity" type="button">Project details <span aria-hidden="true">→</span></button></div>
+        </article>
+      </div>
+      <div class="project-end-note"><span aria-hidden="true">✳</span> More ideas are taking shape behind the scenes.</div>
+    </section>
+
+    <section class="journey-section section container" id="journey" aria-labelledby="journey-title">
+      <div class="section-heading journey-heading">
+        <div class="section-heading-title"><span class="heading-star" aria-hidden="true">✿</span><div><p class="eyebrow">MILESTONES &amp; MOMENTS</p><h2 id="journey-title">My Journey<span class="heading-dot">.</span></h2></div></div>
+        <p class="section-intro">A growing collection of independent projects—each one taught me something new.</p>
+      </div>
+      <div class="journey-path">
+        <article class="journey-item">
+          <div class="journey-date"><span class="date-chip now-chip">NOW</span></div>
+          <div class="journey-dot" aria-hidden="true">✳</div>
+          <div class="journey-card journey-purple">
+            <span class="journey-mini">EXPLORING WHAT'S NEXT</span>
+            <h3>Web Video Editor <span class="small-pill">In development</span></h3>
+            <p>Exploring browser-based editing workflows and a new visual direction, including the Aurora UI concept.</p>
+            <button type="button" class="journey-link" data-project="editor">Explore the concept <span aria-hidden="true">↗</span></button>
+          </div>
+        </article>
+        <article class="journey-item">
+          <div class="journey-date"><span class="date-chip">2026</span></div>
+          <div class="journey-dot" aria-hidden="true">✦</div>
+          <div class="journey-card journey-pink">
+            <span class="journey-mini">INDEPENDENT PUBLISHING</span>
+            <h3>Mochi &amp; Friends is published</h3>
+            <p>Released <em>Mochi &amp; Friends: A Cozy School Day</em> on Amazon under the pen name Lea Moore.</p>
+            <button type="button" class="journey-link" data-project="mochi">See the book <span aria-hidden="true">↗</span></button>
+          </div>
+        </article>
+        <article class="journey-item">
+          <div class="journey-date"><span class="date-chip">02 OCT 2026</span></div>
+          <div class="journey-dot" aria-hidden="true">✿</div>
+          <div class="journey-card journey-blue">
+            <span class="journey-mini">PUBLIC LAUNCH</span>
+            <h3>FileSprout goes live</h3>
+            <p>Launched FileSprout, a browser-based PDF editor and collection of document and file tools.</p>
+            <button type="button" class="journey-link" data-project="filesprout">See the project <span aria-hidden="true">↗</span></button>
+          </div>
+        </article>
+        <article class="journey-item">
+          <div class="journey-date"><span class="date-chip">2023 → TODAY</span></div>
+          <div class="journey-dot" aria-hidden="true">✧</div>
+          <div class="journey-card journey-peach">
+            <span class="journey-mini">DESIGN &amp; E-COMMERCE</span>
+            <h3>SerenityPrints begins</h3>
+            <p>Began creating merchandise designs and growing an independent print-on-demand storefront on Zazzle.</p>
+            <button type="button" class="journey-link" data-project="serenity">Visit the project <span aria-hidden="true">↗</span></button>
+          </div>
+        </article>
+      </div>
+      <p class="journey-footnote">Still learning, still building. More chapters ahead <span aria-hidden="true">✏</span></p>
+    </section>
+
+    <section class="about-skills section container" aria-label="About and skills">
+      <article class="info-card about-card" id="about" aria-labelledby="about-title">
+        <div class="info-title"><span class="info-icon blue-cloud" aria-hidden="true">☁</span><div><p class="eyebrow">A LITTLE INTRODUCTION</p><h2 id="about-title">About Me</h2></div></div>
+        <div class="about-content"><div class="avatar-frame"><div class="avatar-circle"></div><img src="assets/about-illustration.webp" alt="Friendly illustrated character in a cozy workspace" loading="eager"></div><div class="about-text"><p>Hi, I'm Romael! I'm an engineering graduate with a background in electronics and telecommunication.</p><p>Outside formal coursework, I've explored software, digital design, e-commerce and publishing through independently developed projects. I enjoy learning new tools and seeing ideas through to something tangible.</p><a class="text-link" href="#contact">Let's connect <span aria-hidden="true">↗</span></a></div></div>
+        <span class="about-spark" aria-hidden="true">✧</span>
+      </article>
+      <article class="info-card skills-card" id="skills" aria-labelledby="skills-title">
+        <div class="info-title"><span class="info-icon laptop-icon" aria-hidden="true">▣</span><div><p class="eyebrow">THINGS I WORK WITH</p><h2 id="skills-title">Skills &amp; Tools</h2></div></div>
+        <p class="skills-intro">A mix of technical, creative and practical skills developed through personal projects and independent learning.</p>
+        <div class="skills-grid">
+          <div class="skill"><span class="skill-glyph html">&lt;/&gt;</span><span>HTML &amp; CSS</span></div>
+          <div class="skill"><span class="skill-glyph js">JS</span><span>JavaScript</span></div>
+          <div class="skill"><span class="skill-glyph pdf">PDF</span><span>PDF Tools</span></div>
+          <div class="skill"><span class="skill-glyph art">✿</span><span>Digital Design</span></div>
+          <div class="skill"><span class="skill-glyph edit">▶</span><span>Video Editing</span></div>
+          <div class="skill"><span class="skill-glyph book">✎</span><span>Publishing</span></div>
+          <div class="skill"><span class="skill-glyph ae">Ae</span><span>After Effects</span></div>
+          <div class="skill"><span class="skill-glyph ps">Ps</span><span>Photoshop</span></div>
+          <div class="skill"><span class="skill-glyph fi">Fi</span><span>Filmora</span></div>
+        </div>
+        <p class="skills-footnote">Also interested in problem-solving, learning new systems, and building practical workflows.</p>
+      </article>
+    </section>
+
+    <section class="contact-section section container" id="contact" aria-labelledby="contact-title">
+      <div class="contact-panel"><span class="contact-decoration left" aria-hidden="true">✳</span><div class="contact-copy"><p class="eyebrow">SAY HELLO</p><h2 id="contact-title">Have an opportunity or an idea?<br><span>Let's connect!</span></h2><p>I'm open to opportunities across different fields and always interested in learning something new.</p><p class="contact-address"><a href="mailto:romaelwork9600@gmail.com">romaelwork9600@gmail.com</a></p><div class="contact-actions"><a class="btn btn-yellow" href="mailto:romaelwork9600@gmail.com?subject=Hello%20Romael">Email Me <span aria-hidden="true">↗</span></a><a class="btn btn-outline" href="https://github.com/RomaelZero" target="_blank" rel="noopener noreferrer">View GitHub ↗</a></div></div><span class="contact-decoration right" aria-hidden="true">✦</span></div>
+    </section>
+  </main>
+
+  <div class="landscape" aria-hidden="true"><img src="assets/landscape-footer.webp" alt=""></div>
+  <footer class="site-footer"><div class="container footer-inner"><div class="footer-brand">Romael Raina<span>.</span><small>Made with curiosity and a little sunshine ☀</small></div><nav aria-label="Footer navigation"><a href="#work">Projects</a><a href="#journey">Journey</a><a href="#about">About</a><a href="#skills">Skills</a><a href="https://github.com/RomaelZero" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav><p>© <span id="year">2026</span> Romael Raina</p></div></footer>
+
+  <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title"><div class="dialog-inner"><button class="dialog-close" type="button" aria-label="Close project details">×</button><div class="dialog-image-container"><img id="dialog-image" src="assets/filesprout-actual.webp" alt=""></div><div class="dialog-gallery" id="dialog-gallery" aria-label="Project images"></div><p class="dialog-caption" id="dialog-caption"></p><p class="eyebrow" id="dialog-category"></p><h2 id="dialog-title"></h2><p id="dialog-description"></p><div id="dialog-highlights" class="dialog-highlights"></div><div class="dialog-buttons"><a class="btn btn-yellow" id="dialog-link" href="#" target="_blank" rel="noopener noreferrer">Open Project ↗</a><button class="btn btn-outline" type="button" id="dialog-done">Close</button></div></div></dialog>
+  <dialog class="project-dialog resume-dialog" id="resume-dialog" aria-labelledby="resume-dialog-title"><div class="dialog-inner"><button class="dialog-close" type="button" aria-label="Close resume notice">×</button><span class="dialog-illustration" aria-hidden="true">✍</span><p class="eyebrow">PORTFOLIO UPDATE</p><h2 id="resume-dialog-title">The resume is being refreshed.</h2><p>I'm currently updating my resume to better reflect my independent projects and wider career interests. A downloadable PDF can be added here when it's ready.</p><div class="dialog-buttons"><button class="btn btn-yellow" type="button" id="resume-done">Got it!</button></div></div></dialog>
+</body>
+</html>
