@@ -24,24 +24,24 @@
 
 
 /* The independent-project chronology complements, rather than replaces, featured work. */
-.journey-section{padding-top:14px;padding-bottom:66px}
-.journey-heading{margin-bottom:26px}
-.journey-path{position:relative;max-width:1060px;margin:0 auto;display:grid;gap:14px}
-.journey-path::before{content:"";position:absolute;left:189px;top:35px;bottom:39px;border-left:3px dashed #e0b64e;opacity:.9}
-.journey-item{display:grid;grid-template-columns:174px 32px minmax(0,1fr);column-gap:16px;align-items:start;position:relative}
+.journey-section{padding-top:26px;padding-bottom:78px}
+.journey-heading{margin-bottom:32px}
+.journey-path{position:relative;max-width:1200px;margin:0 auto;display:grid;gap:20px}
+.journey-path::before{content:"";position:absolute;left:212px;top:35px;bottom:42px;border-left:3px dashed #e0b64e;opacity:.9}
+.journey-item{display:grid;grid-template-columns:180px 32px minmax(0,1fr);column-gap:16px;align-items:start;position:relative}
 .journey-date{padding-top:17px;display:flex;justify-content:flex-end}
 .date-chip{background:#fff1ba;border:1.5px solid #d9bc70;color:#6d562d;border-radius:999px;padding:7px 12px;font:700 11px var(--heading);letter-spacing:.4px;white-space:nowrap;box-shadow:2px 3px #f5ead8}
 .now-chip{background:#e7e0f9;color:#625091;border-color:#bfb3d8}
 .journey-dot{font:30px/1 var(--heading);color:#e0ae39;z-index:1;text-align:center;background:var(--cream);margin-top:12px;padding:4px 0}
-.journey-card{border:1.5px solid #ddc5a9;border-radius:17px;padding:19px 23px;box-shadow:0 5px 0 #f4e9d8;position:relative}
-.journey-purple{background:#f2efff}.journey-pink{background:#fff0ef}.journey-blue{background:#ebf7fb}.journey-peach{background:#fff1df}
-.journey-card h3{font:600 23px/1.15 var(--heading);letter-spacing:-.35px;margin:5px 0 7px}
-.journey-card p{font-size:13px;line-height:1.65;color:#665a50;max-width:670px;margin:0}
-.journey-mini{font:800 10px var(--body);letter-spacing:1.7px;color:#85745e}
+.journey-card{border:1.5px solid #ddc5a9;border-radius:18px;padding:25px 28px;box-shadow:0 5px 0 #f4e9d8;position:relative}
+.journey-purple{background:#f2efff}.journey-pink{background:#fff0ef}.journey-blue{background:#ebf7fb}.journey-peach{background:#fff1df}.journey-mint{background:#eaf5ed}.journey-sunset{background:#fff1e8}
+.journey-card h3{font:600 24px/1.18 var(--heading);letter-spacing:-.35px;margin:7px 0 10px}
+.journey-card p{font-size:14px;line-height:1.65;color:#51483f;max-width:850px;margin:0}
+.journey-mini{font:800 11px var(--body);letter-spacing:1.7px;color:#755f4d}
 .small-pill{display:inline-block;background:#fff6dd;border:1px solid #dccd9e;border-radius:20px;padding:4px 9px;font:700 10px var(--body);color:#765f3d;vertical-align:middle;margin-left:7px;white-space:nowrap}
 .journey-link{font:700 12px var(--body);border:0;background:transparent;border-bottom:2px solid #e4bc46;color:#473c2a;padding:0 0 2px;margin-top:12px;transition:transform .2s}
 .journey-link:hover{transform:translateY(-2px)}
-.journey-footnote{text-align:center;font:600 15px var(--heading);color:#6f5940;margin:23px 0 0}
+.journey-footnote{text-align:center;font:600 15px var(--heading);color:#6f5940;margin:30px 0 0}
 .contact-address{margin:0 auto 20px!important}
 .contact-address a{font-weight:700;color:#6b4937;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
 /* The detail gallery clearly labels real screenshots versus exploratory mockups. */
@@ -55,5 +55,10 @@
 .dialog-gallery button[aria-pressed="true"]{background:#ffe08a;border-color:#d4a72f;color:#3e3625}
 .dialog-caption{font-size:11px!important;line-height:1.4!important;color:#796c5d!important;margin:6px 0 15px!important}
 @media(max-width:1190px){.nav-links{gap:17px;margin-right:0}}
-@media(max-width:760px){.journey-section{padding-top:14px}.journey-path::before{left:12px}.journey-item{grid-template-columns:29px minmax(0,1fr);gap:10px}.journey-date{grid-column:2;grid-row:1;justify-content:flex-start;padding:0 0 7px}.journey-dot{grid-column:1;grid-row:1 / span 2;margin-top:19px;font-size:24px}.journey-card{grid-column:2;grid-row:2;padding:17px}.journey-card h3{font-size:21px}.journey-path::before{top:25px;bottom:55px}.journey-footnote{font-size:12px}}
+@media(max-width:760px){.journey-section{padding-top:20px}.journey-path{gap:18px}.journey-path::before{left:12px}.journey-item{grid-template-columns:29px minmax(0,1fr);gap:10px}.journey-date{grid-column:2;grid-row:1;justify-content:flex-start;padding:0 0 7px}.journey-dot{grid-column:1;grid-row:1 / span 2;margin-top:19px;font-size:24px}.journey-card{grid-column:2;grid-row:2;padding:19px 20px}.journey-card h3{font-size:21px}.journey-path::before{top:25px;bottom:55px}.journey-footnote{font-size:12px}}
 @media(max-width:540px){.journey-section{padding-bottom:48px}.journey-card h3{font-size:19px}.journey-card p{font-size:12px}.project-dialog:not(.resume-dialog) .dialog-inner{padding:21px}.project-dialog:not(.resume-dialog) .dialog-image-container{height:205px}}
+
+/* Added portfolio milestones: brochure design (2018) and video editing (2015). */
+.journey-note{display:inline-block;margin-top:13px;padding:5px 11px;background:rgba(255,255,255,.75);border:1px solid rgba(145,112,77,.22);border-radius:999px;color:#624b36;font-size:12px;font-weight:700}
+.journey-extra .journey-dot{font-size:25px}
+@media(max-width:760px){.journey-path{gap:19px}.journey-extra .journey-dot{font-size:23px}.journey-note{font-size:11px}}
